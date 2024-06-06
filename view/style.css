@@ -1,0 +1,79 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+ 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+ 
+h2 {
+    color: #635e5e;
+    margin-bottom: 15px;
+   
+}
+ 
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+ 
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+ 
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+ 
+button[type="submit"], button[type="button"] {
+    padding: 10px 20px;
+    background-color: #944fee;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+responsive {
+    width: 50%;
+    float: left;
+}
+ 
+/* Estilo para telas menores que 610px */
+@media (max-width: 610px) {
+    .responsive {
+        width: 100%;
+        float: none;
+    }
+}
+ 
+/* Estilo para telas entre 611px e 900px */
+@media (min-width: 611px) and (max-width: 900px) {
+    .responsive {
+        width: 70%;
+    }
+}
+ 
+/* Estilo para telas maiores que 910px */
+@media (min-width: 910px) {
+    .responsive {
+        width: 50%;
+        float: left;
+    }
+}
+
+  
