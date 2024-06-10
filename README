@@ -1,0 +1,23 @@
+ 
+/* Estilo para telas menores que 610px */
+@media (max-width: 610px) {
+    .responsive {
+        width: 100%;
+        float: none;
+    }
+}
+ 
+/* Estilo para telas entre 611px e 900px */
+@media (min-width: 611px) and (max-width: 900px) {
+    .responsive {
+        width: 70%;
+    }
+}
+ 
+/* Estilo para telas maiores que 910px */
+@media (min-width: 910px) {
+    .responsive {
+        width: 50%;
+        float: left;
+    }
+}

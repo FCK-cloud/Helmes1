@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Alunos</title>
+    
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <button class="mainmenubtn">Menu</button>
+        <div class="dropdown-child">
+            <a href="maps.html">Mapa</a>
+            <a href="index.html">Logar em outra conta</a></li>
+        </div>
+      </div>
+    
+    <div class="container">
+        <form id="cadastroForm">
+            <h1>Cadastro de Alunos</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="turma">Turma:</label>
+            <input type="text" id="turma" name="turma"><br>
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso"><br>
+            <label for="imagem">Imagem:</label>
+            <input type="file" id="imagem" name="imagem"><br><br>
+            <button type="button" onclick="enviarDadosParaFirebase()">Enviar Dados</button><br>
+            <button type="button" onclick="limpaCampo('cadastroForm')" >Limpar Campos</button>
+        </form>
+    </div>
+    <div class="container" id="pesquisaForm">
+        <form id="consultarForm">
+            <h1>Consultar Aluno</h1>
+            <label for="nomeConsulta">Nome:</label>
+            <input type="text" id="nomeConsulta" name="nomeConsulta"><br><br>
+            <button type="button" onclick="consultarAlunoPorNome()" >Consultar</button><br>
+            <button type="button" onclick="limpaCampo('consultarForm')" >Limpar Campo</button>
+        </form>
+    </div>
+    <div id="a" style="display: none;">
+        <button id="botao">Fechar</button>
+        <ul id="listaAlunos"></ul>
+    </div>
+
+    <!-- Inclua o Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <script src="app.js"></script>
+    <!-- Limpar Campos -->
+    <script src="scriptLimparCampos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Estilo para o menu de navegação */
+nav {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu{
+    text-align: center;
+}
+
+#list{
+    list-style-type: none;
+}
+
+#list a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 100px;
+    background-color: #434343;
+}
+
+#list a:hover{
+    background-color: #5d5d5d;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    /* Remove 20px para acomodar o padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#botao{
+    background: rgb(255, 0, 0);
+    color: white;
+    border-radius: 6px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#a{ 
+    width: 1000px;
+    height: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    position: absolute;
+    z-index: 5;
+}
+#a li {
+    width: 90%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+#a img {
+    display: block;
+    max-width: 100%; /* Ajusta a largura da imagem ao contêiner */
+    height: auto;
+}
